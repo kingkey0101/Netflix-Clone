@@ -8,6 +8,9 @@ import caret_icon from '../../assets/caret_icon.svg'
 
 
 const Navbar = () => {
+
+  
+
   return (
     <div className='navbar'>
       <div className="navbar-left">
