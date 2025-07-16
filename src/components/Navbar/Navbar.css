@@ -30,25 +30,26 @@
 .navbar-left ul li {
     cursor: pointer;
 }
-.navbar-right{
+
+.navbar-right {
     display: flex;
     gap: 20px;
     align-items: center;
 }
 
-.navbar-right .icons{
+.navbar-right .icons {
     width: 20px;
     cursor: pointer;
 }
 
 
-.navbar-right .profile{
+.navbar-right .profile {
     border-radius: 4px;
     width: 35px;
 
 }
 
-.navbar-profile{
+.navbar-profile {
     display: flex;
     align-items: center;
     gap: 10px;
@@ -57,7 +58,7 @@
 
 }
 
-.navbar .dropdown{
+.navbar .dropdown {
     position: absolute;
     top: 100%;
     right: 0;
@@ -71,11 +72,40 @@
 
 }
 
-.navbar .dropdown p{
+.navbar .dropdown p {
     font-size: 13px;
     cursor: pointer;
 }
 
-.navbar-profile:hover .dropdown{
+.navbar-profile:hover .dropdown {
     display: block;
+}
+
+.nav-dark {
+    background: #141414;
+}
+
+@media (max-width: 800px) {
+    .navbar {
+        padding: 20px 4%;
+
+    }
+
+    .navbar-left ul {
+        display: none;
+    }
+
+    .navbar img {
+        height: 25px;
+    }
+}
+
+@media (max-width: 500px) {
+    .navbar img {
+        height: 20px;
+    }
+
+    .navbar-right {
+        gap: 10px;
+    }
 }
